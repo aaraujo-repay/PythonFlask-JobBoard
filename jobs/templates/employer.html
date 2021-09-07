@@ -1,5 +1,10 @@
 {% extends "layout.html" %}
 
+
+<!-- templates/employer.html -->
+{% block content %}
+
+
 <div>
     <h1>{{employer['name']}}</h1>
     <div class="description">
@@ -7,8 +12,6 @@
     </div>
 </div>
 
-<!-- templates/employer.html -->
-{% block content %}
 
 <h2>Jobs</h2>
 {{show_jobs(jobs)}}
